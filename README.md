@@ -6,6 +6,29 @@ A autonomous AI agents for Security Operations Center (SOC) alert triage and inc
 
 ---
 
+## Installation
+
+### Local Installation
+
+```bash
+brew install python@3.12
+python3.12 -m venv env312
+source env312/bin/activate
+pip install -r requirements.txt
+python run.py
+```
+
+### Docker Container
+
+```bash
+docker pull vikas9012/agentic-soc:latest
+docker-compose up -d
+docker-compose ps
+```
+---
+
+---
+
 ## Problem Statement
 
 ### Challenges in Modern SOC Operations
@@ -111,25 +134,4 @@ Validate whether autonomous AI agents can replace repetitive Level 1 SOC triage 
 ### Data & Storage
 - **JSON** - Alert data, threat intel, ground truth
 
----
 
-## Installation
-
-### Local Installation
-
-```bash
-brew install python@3.12
-python3.12 -m venv env312
-source env312/bin/activate
-pip install -r requirements.txt
-python run.py
-```
-
-### Docker Container
-
-```bash
-docker pull vikas9012/agentic-soc:latest
-docker-compose up -d
-docker-compose ps
-```
----
