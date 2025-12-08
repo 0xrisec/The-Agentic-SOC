@@ -58,10 +58,6 @@ def main():
     print("=" * 80)
     print()
 
-    # Check environment
-    if not check_environment():
-        sys.exit(1)
-
     # Configure logging early (console + file)
     try:
         from app.config import settings
